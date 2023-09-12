@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>428347792485-hac0lm5ma6pn8600m5rst7620a08s57d.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.428347792485-hac0lm5ma6pn8600m5rst7620a08s57d</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>428347792485-v2h80hi3a9anj36g3vir5k8qlpi8gdi2.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBcX-22oCbEC0qLuMzSlxdVLEMro6xJklM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>428347792485</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>timor.merchant.iosapp</string>
+	<key>PROJECT_ID</key>
+	<string>viettel-dev</string>
+	<key>STORAGE_BUCKET</key>
+	<string>viettel-dev.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:428347792485:ios:c3dbf2cb26b2d30b71ba8c</string>
+</dict>
+</plist>

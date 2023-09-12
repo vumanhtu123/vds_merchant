@@ -1,0 +1,57 @@
+class ApiConst {
+
+  static String mainUrl = "http://192.168.1.23:8082";
+  static String mainUAAUrl = "http://125.234.172.12:8080/";
+  static String mainUrl2 = "https://promotion-service.dev.afstech.vn/";
+
+  static String login = "oauth/login";
+  static String registerDeviceToken = "services/notification-service/api/v1/notification/register";
+  static String unregisterDeviceToken = "services/notification-service/api/v1/notification/unregister";
+
+  static String merchantTransactions = "/merchant-service/mobile/merchant/public/api/v1/transactions";
+  static String merchantOrder = "/merchant-service/mobile/merchant/public/api/v1/orders";
+  static String merchantInfoMerchant = "/merchant-service/mobile/merchant/public/api/v1/merchants/merchant";
+  static String merchantTransactionsDetails = "/merchant-service/mobile/merchant/public/api/v1/transactions/";
+  static String merchantDetail = "/merchant-service/mobile/merchant/public/api/v1/merchants/merchant";
+  static String merchantOrderDetails = "/merchant-service/mobile/merchant/public/api/v1/orders/";
+
+  //Wallet
+  static String merchantWithdrawalHO =
+      "/merchant-service/mobile/merchant/public/api/v1/wallets/withdrawal/ho";
+  static String merchantWithdrawalBank =
+      "/merchant-service/mobile/merchant/public/api/v1/wallets/withdrawal/bank";
+  static String merchantPinVerify =
+      "/merchant-service/mobile/merchant/public/api/v1/wallets/pin/verify";
+  static String merchantOTP =
+      "/merchant-service/mobile/merchant/public/api/v1/wallets/otp";
+  static String merchantWithdrawalFee =
+      "/merchant-service/mobile/merchant/public/api/v1/wallets/fee";
+  static String merchantAccountBalance =
+      "/merchant-service/mobile/merchant/public/api/v1/wallets/balance";
+
+  //Account
+  static String staffChangePass = "/merchant-service/mobile/merchant/"
+      "public/api/v1/staffs/change-password";
+  static String merchantChangePass = "/merchant-service/mobile/merchant/"
+      "public/api/v1/root-accounts/change-password";
+  static String merchantResetPin = "/merchant-service/mobile/merchant/"
+      "public/api/v1/root-accounts/reset-pin";
+  static String merchantForgotPassword = "/public-api/mobile/merchant/v1/merchant/forgot-password";
+  static String merchantCheckPin = "/merchant-service/mobile/merchant/"
+      "public/api/v1/merchants/check-pin";
+  static String merchantSubmitNewPass = "uaa/public-api/v1/user/submit-password";
+  static String merchantRegisterPin = "/merchant-service/mobile/merchant/public/api/v1/merchants/register-pin";
+
+  //Staff
+  static String staffForgotPassword = "/public-api/mobile/merchant/v1/staffs/forgot-password";
+  static String merchantTransactionsStaff = "/merchant-service/mobile/merchant/public/api/v1/staffs/transactions";
+  static String infoStaff = "/merchant-service/mobile/merchant/public/api/v1/staffs/staff";
+  static String changePassStaff = "/merchant-service/mobile/merchant/public/api/v1/staffs/change-password";
+
+  //Promotion
+  static String campaignPromotion =
+      "api/v1/mobile/campaign-promotion/dashboard";
+  static String detailCampaignPromotion = "api/v1/mobile/campaign-promotion/";
+
+  static int size = 20;
+}

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "428347792485",
+    "project_id": "viettel-dev",
+    "storage_bucket": "viettel-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428347792485:android:342e6a06db5f1ceb71ba8c",
+        "android_client_info": {
+          "package_name": "app.viet.vds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428347792485-v2h80hi3a9anj36g3vir5k8qlpi8gdi2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.viet.vds",
+            "certificate_hash": "1f54dd1e78239cc6480603795c5732cc007b665e"
+          }
+        },
+        {
+          "client_id": "428347792485-91lv5udqqmofk62sm09qi5bc7getmqi8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpQZL3HunlmPqlSMktvsKC59a310EQAQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428347792485-91lv5udqqmofk62sm09qi5bc7getmqi8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

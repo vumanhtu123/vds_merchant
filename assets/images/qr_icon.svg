@@ -1,0 +1,36 @@
+<svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" width="45" height="45" rx="8" fill="url(#paint0_linear_508_12541)"/>
+<path d="M19.75 12H11.5V20.25H19.75V12ZM18.375 18.875H12.875V13.375H18.375V18.875Z" fill="white"/>
+<path d="M14.25 14.75H17V17.5H14.25V14.75Z" fill="white"/>
+<path d="M11.5 34H19.75V25.75H11.5V34ZM12.875 27.125H18.375V32.625H12.875V27.125Z" fill="white"/>
+<path d="M14.25 28.5H17V31.25H14.25V28.5Z" fill="white"/>
+<path d="M25.25 12V20.25H33.5V12H25.25ZM32.125 18.875H26.625V13.375H32.125V18.875Z" fill="white"/>
+<path d="M28 14.75H30.75V17.5H28V14.75Z" fill="white"/>
+<path d="M14.25 21.625H11.5V24.375H15.625V23H14.25V21.625Z" fill="white"/>
+<path d="M21.125 24.375H23.875V27.125H21.125V24.375Z" fill="white"/>
+<path d="M15.625 21.625H18.375V23H15.625V21.625Z" fill="white"/>
+<path d="M23.875 28.5H21.125V29.875H22.5V31.25H23.875V29.875V28.5Z" fill="white"/>
+<path d="M19.75 21.625V23H18.375V24.375H21.125V21.625H19.75Z" fill="white"/>
+<path d="M22.5 17.5H23.875V20.25H22.5V17.5Z" fill="white"/>
+<path d="M23.875 23V24.375H26.625V21.625H22.5V23H23.875Z" fill="white"/>
+<path d="M21.125 20.25H22.5V21.625H21.125V20.25Z" fill="white"/>
+<path d="M23.875 31.25H26.625V34H23.875V31.25Z" fill="white"/>
+<path d="M21.125 31.25H22.5V34H21.125V31.25Z" fill="white"/>
+<path d="M23.875 27.125H25.25V28.5H23.875V27.125Z" fill="white"/>
+<path d="M23.875 16.125V13.375H22.5V12H21.125V17.5H22.5V16.125H23.875Z" fill="white"/>
+<path d="M28 31.25H29.375V34H28V31.25Z" fill="white"/>
+<path d="M28 28.5H30.75V29.875H28V28.5Z" fill="white"/>
+<path d="M26.625 29.875H28V31.25H26.625V29.875Z" fill="white"/>
+<path d="M25.25 28.5H26.625V29.875H25.25V28.5Z" fill="white"/>
+<path d="M30.75 25.75V27.125H32.125V28.5H33.5V25.75H32.125H30.75Z" fill="white"/>
+<path d="M32.125 29.875H30.75V34H33.5V31.25H32.125V29.875Z" fill="white"/>
+<path d="M25.25 25.75V27.125H29.375V24.375H26.625V25.75H25.25Z" fill="white"/>
+<path d="M28 21.625V23H30.75V24.375H33.5V21.625H30.75H28Z" fill="white"/>
+<defs>
+<linearGradient id="paint0_linear_508_12541" x1="23" y1="0" x2="23" y2="45" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F7F7F7"/>
+<stop offset="0.0001" stop-color="#62D9BF"/>
+<stop offset="1" stop-color="#25AE97"/>
+</linearGradient>
+</defs>
+</svg>
