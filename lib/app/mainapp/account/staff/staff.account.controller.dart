@@ -2,6 +2,9 @@ import 'package:get/get.dart';
 import 'package:vds/app/mainapp/account/component/menu.account.dart';
 import 'package:vds/app/mainapp/account/component/staff.menu.account.dart';
 import 'package:vds/base/base_controller.dart';
+import 'package:vds/base/request/logout.request.dart';
+import 'package:vds/common/storage_data.dart';
+
 import '../../../../base/routes.dart';
 import '../component/bottom.sheet.changelanguage.dart';
 
@@ -35,8 +38,25 @@ class StaffAccountController extends BaseController {
         Get.toNamed(Routes.qrStaff);
         break;
       case StaffMenuAccountEnum.logout:
-        showLogout();
+        showLogout(onLogout);
         break;
     }
+  }
+
+  void onLogout() async {
+    await openLoadingDialog();
+    logOut(LogoutRequest(), StorageData.instance.getAppToken() ?? '')
+        .then((value) async {
+      if (value.message == "Success") {
+        await closeLoadingDialog();
+        print("outttttt");
+        StorageData.instance.onLogout();
+        Get.offAllNamed(Routes.login);
+      } else {
+        await showErrorDialog(message: value.errorDescription);
+      }
+    }).catchError((onError) async {
+      await showErrorDialog(message: onError);
+    });
   }
 }

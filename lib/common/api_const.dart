@@ -1,14 +1,16 @@
 class ApiConst {
-  // static String mainUrl = "http://125.234.172.12:8382/gateway/services/";
-  static String mainUrl = "https://mosanapitest.telemor.tl:8080/gateway/services/";
-  static String mainUAAUrl = "https://mosanapitest.telemor.tl:8080/gateway/";
-  static String mainUA = "https://mosanapitest.telemor.tl:8080/gateway/";
-  // static String mainUAAUrl = "http://125.234.172.12:8382/gateway/";
-  // static String mainUA = "http://125.234.172.12:8382/gateway/";
+  static String mainUrl = "http://125.234.172.12:8382/gateway/services/";
+
+  // static String mainUrl = "https://mosanapitest.telemor.tl:8080/gateway/services/";
+  // static String mainUAAUrl = "https://mosanapitest.telemor.tl:8080/gateway/";
+  // static String mainUA = "https://mosanapitest.telemor.tl:8080/gateway/";
+  static String mainUAAUrl = "http://125.234.172.12:8382/gateway/";
+  static String mainUA = "http://125.234.172.12:8382/gateway/";
 
   static String logins =
       "services/merchant-service/public-api/mobile/oauth/login";
   static String login = "oauth/login";
+  static String logout = "oauth/logout";
   static String registerDeviceToken =
       "services/notification-service/api/v1/notification/register";
   static String unregisterDeviceToken =

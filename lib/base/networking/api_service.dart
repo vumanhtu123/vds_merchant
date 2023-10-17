@@ -280,10 +280,11 @@ class ApiUALoginService extends GetConnect {
   }
 
   Future<Map<String, dynamic>> getM(String url, Map<String, dynamic> params,
-      {bool hasHeaders = true}) async {
+      {bool hasHeaders = true, String? appToken}) async {
     Map<String, String> mapHeaders = {};
     if (hasHeaders) {
-      mapHeaders["authorization"] = "Basic dGVzdDp0ZXN0";
+      mapHeaders["authorization"] =
+      (appToken != null) ? "Bearer $appToken" : "Basic dGVzdDp0ZXN0";
     }
     mapHeaders["imei"] = await MerUtils.getDeviceId();
     Response response = await get(url, query: params, headers: mapHeaders);

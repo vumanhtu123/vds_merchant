@@ -122,10 +122,9 @@ Map<String, String> usTranslation = {
   'Tổng tiền': 'Total Money',
   'Xác nhận': 'Confirm',
   'Giao dịch thành công': 'Successful transaction',
-  'Gửi yêu cầu rút tiền thành công':
-      'Withdrawal request submitted successfully!',
+  'Gửi yêu cầu rút tiền thành công': 'Your transaction was successful!',
   'Bạn đã tạo đề nghị rút tiền thành công, vui lòng chờ xác nhận của kế toán':
-      'You have successfully created a withdrawal request, please wait for the accountant\'s confirmation',
+      'If you have any problems, please contact customer service for assistance.',
   'Ngày yêu cầu': 'Request Date',
   'Số dư hiện tại': 'Current balance',
   'Số dư ví không đủ': 'Wallet balance is insufficient',

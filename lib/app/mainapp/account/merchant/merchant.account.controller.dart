@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:vds/app/mainapp/account/component/bottom.sheet.changelanguage.dart';
 import 'package:vds/app/mainapp/account/component/menu.account.dart';
 import 'package:vds/base/base_controller.dart';
-import 'package:vds/base/request/unregister_device_token_request.dart';
+import 'package:vds/base/request/logout.request.dart';
 import 'package:vds/base/routes.dart';
 import 'package:vds/common/storage_data.dart';
 
@@ -45,25 +44,25 @@ class MerchantAccountController extends BaseController {
         //     ),
         //   ]
         // );
-       final result = await showLogout();
-        if(result is bool && result == true) {
-          final request = UnregisterDeviceTokenRequest(
-            token: StorageData.instance.getDeviceStore() ?? "",
-          );
-          await openLoadingDialog();
-          final response = await unregisterDeviceToken(request).catchError((error) async {
-            await closeLoadingDialog();
-            await showErrorDialog(message: error?.toString() ?? "");
-          });
-          await closeLoadingDialog();
-          if(response?.isSuccess() == true) {
-            await StorageData.instance.onLogout();
-            Get.offNamed(Routes.login);
-          } else {
-            await showErrorDialog(message: response?.errorDescription);
-          }
-        }
+        final result = await showLogout(onLogout);
         break;
     }
+  }
+
+  void onLogout() async {
+    await openLoadingDialog();
+    logOut(LogoutRequest(), StorageData.instance.getAppToken() ?? '')
+        .then((value) async {
+      if (value.message == "Success") {
+        await closeLoadingDialog();
+        print("outttttt");
+        StorageData.instance.onLogout();
+        Get.offAllNamed(Routes.login);
+      } else {
+        await showErrorDialog(message: value.errorDescription);
+      }
+    }).catchError((onError) async {
+      await showErrorDialog(message: onError);
+    });
   }
 }

@@ -309,7 +309,7 @@ class BaseController extends GetxController
     );
   }
 
-  Future<dynamic> showLogout() async {
+  Future<dynamic> showLogout(Function() onTap) async {
     return Get.bottomSheet(
       StatefulBuilder(builder: (context, state) {
         return Column(
@@ -341,8 +341,7 @@ class BaseController extends GetxController
                   ),
                   TextButton(
                     onPressed: () {
-                      StorageData.instance.onLogout();
-                      Get.offAllNamed(Routes.login);
+                      onTap();
                     },
                     child: Text(
                       'Đăng xuất'.tr,

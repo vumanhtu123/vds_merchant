@@ -1,6 +1,7 @@
 import 'package:vds/base/base_model.dart';
 import 'package:vds/base/networking/api_service.dart';
 import 'package:vds/base/request/forgot_password_request.dart';
+import 'package:vds/base/request/logout.request.dart';
 import 'package:vds/base/request/merchant_change_pass_request.dart';
 import 'package:vds/base/request/merchant_change_pin_request.dart';
 import 'package:vds/base/request/merchant_check_pin_request.dart';
@@ -96,5 +97,11 @@ class AccountRepositories {
   Future<CurrentModel> currentMerchant(CurrentMerchantRequest request) async {
     final map = await apiService.getM(request.toApi(), request.toMap());
     return CurrentModel.fromJson(map);
+  }
+
+  Future<BaseModel> logOut(LogoutRequest request, String appToken) async {
+    final map = await apiUALogin.getM(request.toApi(), request.toMap(),
+        appToken: appToken);
+    return BaseModel.fromJson(map);
   }
 }
